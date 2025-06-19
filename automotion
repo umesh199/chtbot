@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Create folder
+sudo mkdir -p /opt/chatbot
+sudo cp chatbot_app.py /opt/chatbot/
+sudo cp knowledge_base.json /opt/chatbot/
+sudo touch /opt/chatbot/unanswered_queries.txt
+sudo chmod -R 755 /opt/chatbot
+
+# Install tkinter
+sudo dnf install python3-tkinter -y
+
+# Create desktop shortcut
+cat <<EOF > ~/Desktop/ChatBot.desktop
+[Desktop Entry]
+Name=Internal AI ChatBot
+Comment=Ask your internal AI support assistant
+Exec=python3 /opt/chatbot/chatbot_app.py
+Icon=/opt/chatbot/chatbot.png
+Terminal=false
+Type=Application
+Categories=Utility;
+EOF
+
+chmod +x ~/Desktop/ChatBot.desktop
+gio set ~/Desktop/ChatBot.desktop "metadata::trusted" yes
+
+echo "✅ Chatbot is ready. Click the desktop icon to start!"
