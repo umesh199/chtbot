@@ -1,0 +1,14 @@
+[
+  {
+    "keywords": ["not able to login", "can't login", "cannot login", "login failed", "unable to login", "log in issue"],
+    "response": "Please check your Active Directory (AD) account. If the issue persists, contact IT support."
+  },
+  {
+    "keywords": ["vpn error", "vpn not connecting", "vpn failed"],
+    "response": "Ensure your VPN client is running and configured properly. Contact IT for server settings."
+  },
+  {
+    "keywords": ["slow system", "lag", "unresponsive"],
+    "response": "Try restarting your system and closing unnecessary applications. If it persists, contact IT."
+  }
+]
