@@ -1,0 +1,2 @@
+chmod +x ~/Desktop/ChatBot.desktop
+gio set ~/Desktop/ChatBot.desktop "metadata::trusted" yes
