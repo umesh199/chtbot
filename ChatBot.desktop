@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Internal AI ChatBot
+Comment=Ask your internal AI support assistant
+Exec=python3 /opt/chatbot/chatbot_app.py
+Icon=/opt/chatbot/chatbot.png
+Terminal=false
+Type=Application
+Categories=Utility;
